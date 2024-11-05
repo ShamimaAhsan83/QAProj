@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-27T00:01:52 CDT" name="Default suite" finished-at="2024-10-27T00:02:00 CDT" duration-ms="7883">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunTestNG@3bd82cf5]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-10-27T00:01:52 CDT" name="Default test" finished-at="2024-10-27T00:02:00 CDT" duration-ms="7883">
+      <class name="Runner.TestRunTestNG">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.TestRunTestNG@3bd82cf5]" started-at="2024-10-27T00:01:52 CDT" name="setUpClass" finished-at="2024-10-27T00:01:53 CDT" duration-ms="682" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5c9ac4cc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestRunTestNG@3bd82cf5]" started-at="2024-10-27T00:01:53 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-27T00:02:00 CDT" duration-ms="7112" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Flights"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Selects Flight"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
+            <message>
+              <![CDATA[Element should have been "select" but was "input"
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "input"
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:46)
+at StepDefinition.Flight_StepD7.user_selects_the_required_options(Flight_StepD7.java:45)
+at ✽.User selects the required options(file:///E:/JavaSelenium/BDD_Project/Features/Day7Flight.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.support.ui.UnexpectedTagNameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestRunTestNG@3bd82cf5]" started-at="2024-10-27T00:02:00 CDT" name="tearDownClass" finished-at="2024-10-27T00:02:00 CDT" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.TestRunTestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
